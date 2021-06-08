@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+</head>
+<body>
+
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <h1>Contact Us</h1>
+
+
+    </section>
+
+    <!---------------------------contact us-------------------->
+
+    <section class="loacation">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28663.99701870667!2d85.35232343482583!3d26.098930843011367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed112498267add%3A0x5e2f03b20cac12b1!2sKhabra%2C%20Bihar!5e0!3m2!1sen!2sin!4v1622819150946!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+
+        <div class="row">
+
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>xyz road, abc building </h5>
+                        <p>muzffarpur, bihar</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 2 555 5555555</h5>
+                        <p>Monday to friday, 10am to 6am</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>hsbhjsdhj@gmail.com</h5>
+                        <p>Contact us for more query</p>
+                    </span>
+                </div>
+
+            </div>
+ 
+            <div class="contact-col">
+
+                <form action="formhandler.php">
+                    <input type="text" placeholder="Enter Your Nmae" required>
+                    <input type="email" placeholder="Enter Your mail" required>
+                    <input type="" placeholder="Enter Your subject" required>
+                    <textarea rows="8" placeholder="message" required></textarea>
+                    <button class="hero-btn red-btn">Send Message</button>
+
+                </form>
+                
+            </div>
+
+        </div>
+
+    </section>
+<!----------- Footer ---------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. <br> The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made with <i class="fa fa-heart-o"></i> Harsh Raj</p>
+</section>
+
+
+
+
+
+
+
+<!--------------javascript for toggle menu----------------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
